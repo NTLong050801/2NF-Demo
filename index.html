@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="./Carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./Carousel/css/owl.carousel.css">
     <link rel="stylesheet" href="./Carousel/css/owl.theme.default.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -44,33 +48,33 @@
             <div class="main_navbar">
                 <ul>
                     <li>
-                        <a href="#">HOME</a>
+                        <a href="#home">HOME</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">SERVICES</a>
+                        <a href="#services">SERVICES</a>
                     </li>
                     <li>
-                        <a href="#">Team</a>
+                        <a href="#team">Team</a>
                     </li>
                     <li>
-                        <a href="#">PORTFOLIO</a>
+                        <a href="#portf">PORTFOLIO</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="#blog">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
 
         </div>
     </div>
-    
-    <div id="home" class="home">
+
+    <div id="home" class="home" style="z-index: -1;">
         <canvas id="reactive-bg-canvas"></canvas>
         <div class="row text-center">
             <h1>CRUCIO</h1>
@@ -78,7 +82,9 @@
             <h2>POWERFUL WEBSITES</h2>
         </div>
         <div class="text-center">
-            <a href="#about" class="scroll-down"></a>
+            <a href="#about" class="scroll-down">
+                <!-- <iconify-icon icon="ic:baseline-keyboard-arrow-down"></iconify-icon> -->
+            </a>
         </div>
     </div>
     <div id="about" class="about">
@@ -215,9 +221,12 @@
 
         </div>
         <div class="serv_banner">
-            <div class="serv_banner_main text-center">
-                <h2>WE CREATE <strong>AWESOME</strong> PROJECTS</h2>
-                <a href="#">GET STARTED</a>
+            <div class="serv_banner_main text-center ">
+                <h2 class="animate__animated wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">WE
+                    CREATE
+                    <strong>AWESOME</strong> PROJECTS</h2>
+                <a href="#" class="animate__animated wow animate__fadeInUp " data-wow-duration="1s"
+                    data-wow-delay="0.5s">GET STARTED</a>
             </div>
         </div>
     </div>
@@ -230,7 +239,7 @@
             </div>
         </div>
         <div class="img_team">
-            <div class="img_team_main wow fadeInLeft">
+            <div class="img_team_main animate__animated wow animate__fadeInLeft" data-wow-duration="1s">
                 <div class="img_team_content">
                     <img src="./images/team1.jpg" alt="">
                     <div class="mask">
@@ -251,7 +260,7 @@
                     </div>
                 </div>
             </div>
-            <div class="img_team_main">
+            <div class="img_team_main animate__animated wow animate__fadeInDown" data-wow-duration="1s">
                 <div class="img_team_content">
                     <img src="./images/team2.jpg" alt="">
                     <div class="mask">
@@ -273,7 +282,7 @@
                 </div>
 
             </div>
-            <div class="img_team_main">
+            <div class="img_team_main animate__animated wow animate__fadeInRight" data-wow-duration="1s">
                 <div class="img_team_content">
                     <img src="./images/team3.jpg" alt="">
                     <div class="mask">
@@ -299,25 +308,25 @@
         <div class="serv_banner">
             <div class="serv_banner_main text-center">
                 <div class="number_banner">
-                    <h2 class="countTo animated" data-to="150" data-from="0" data-speed="1500">150</h2>
+                    <h2 class="countTo   " data-to="150" data-from="0" data-speed="1500">150</h2>
                     <h3>Clients</h3>
                 </div>
                 <div class="number_banner">
-                    <h2 class="countTo animated" data-to="620" data-from="0" data-speed="1500">620</h2>
+                    <h2 class="countTo   " data-to="620" data-from="0" data-speed="1500">620</h2>
                     <h3>Projects</h3>
                 </div>
                 <div class="number_banner">
-                    <h2 class="countTo animated" data-to="25" data-from="0" data-speed="1500">25</h2>
+                    <h2 class="countTo  " data-to="25" data-from="0" data-speed="1500">25</h2>
                     <h3>Awards</h3>
                 </div>
-                <div class="number_banner">
-                    <h2 class="countTo animated" data-to="940" data-from="0" data-speed="1500">940</h2>
+                <div class="number_banner wow animate__animated">
+                    <h2 class="countTo " data-to="940" data-from="0" data-speed="1500">940</h2>
                     <h3>Coffee</h3>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portf">
+    <div id="portf" class="portf">
         <div class="about_text">
             <div class="section-content text-center">
                 <h2>OUR PORTFOLIO
@@ -327,9 +336,9 @@
         </div>
         <div class="title_portf text-center">
             <a class="filter active" data-filter="*">All</a>
-            <a class="filter" data-filter=".graphic-design_639a974a0a9f5">Graphic Design</a>
-            <a class="filter" data-filter=".web-design_639a974a0a9f5">Web Design</a>
-            <a class="filter" data-filter=".web-development_639a974a0a9f5">Web Development</a>
+            <a class="filter" data-filter="graphic">Graphic Design</a>
+            <a class="filter" data-filter="design">Web Design</a>
+            <a class="filter" data-filter="dev">Web Development</a>
         </div>
         <div class="all_item">
             <div class="row_item">
@@ -393,7 +402,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="item web">
+                <div class="item dev">
                     <img src="./images/work6.jpg" alt="">
                     <div class="image-overlay">
                         <a href="https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work1.jpg"
@@ -405,7 +414,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="item web">
+                <div class="item dev">
                     <img src="./images/work7.jpg" alt="">
                     <div class="image-overlay">
                         <a href="https://crucio.riccardoborchi.it/wp-content/uploads/2017/03/work1.jpg"
@@ -438,24 +447,29 @@
         </div>
         <div class="newsletter">
             <div class="content_news text-center">
-                <h3>Subscribe To Our Newsletter</h3>
+                <h3 class="animate__animated wow animate__fadeInDown" data-wow-duration="1s">Subscribe To Our Newsletter
+                </h3>
                 <div class="ip_content">
                     <form action="">
-                        <input type="text" placeholder="Enter your email...">
+                        <input class="animate__animated wow animate__fadeInLeft" data-wow-delay="0.5s"
+                            data-wow-duration="1s" type="text" placeholder="Enter your email...">
                         <br>
-                        <button type="submit">Subscribe</button>
+                        <button type="submit " class="animate__animated wow animate__fadeInUp" data-wow-duration="1s"
+                            data-wow-delay="0.5s">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="serv_banner">
             <div class="serv_banner_main text-center">
-                <h2>WANT TO DISCUSS YOUR NEW PROJECT?</h2>
-                <a href="#">CONTACT US</a>
+                <h2 class="animate__animated wow animate__fadeInLeft" data-wow-delay="0.5s">WANT TO DISCUSS YOUR NEW
+                    PROJECT?</h2>
+                <a class="animate__animated wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"
+                    href="#">CONTACT US</a>
             </div>
         </div>
     </div>
-    <div class="blog">
+    <div id="blog" class="blog">
         <div class="about_text">
             <div class="section-content text-center">
                 <h2>TESTIMONIALS
@@ -507,7 +521,7 @@
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="about_text">
             <div class="section-content text-center">
                 <h2>CONTACT
@@ -576,7 +590,9 @@
         </div>
     </footer>
     <div class="back-to-top" style="display: block;">
-        <a href="#top"><iconify-icon icon="material-symbols:keyboard-arrow-up"></iconify-icon></a>
+        <a href="#top">
+            <iconify-icon icon="material-symbols:keyboard-arrow-up"></iconify-icon>
+        </a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
         integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
@@ -588,21 +604,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
-        integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./Carousel/js/owl.carousel.js"></script>
     <script src="./Carousel/js/owl.carousel.min.js"></script>
+    <script src="./jquery.countTo.js"></script>
     <script>
-        wow = new WOW({
-            boxClass: 'wow', // default
-            animateClass: 'animated', // default
-            offset: 0, // default
-            mobile: true, // default
-            live: true // default
-        })
-        new WOW().init();
+        var win = $(window);
+        var doc = $(document);
+        var magicCanvas = $.magicCanvas;
+        slideIndex = 0
+        main_menu = document.getElementById('main_menu')
+        arr_img = [
+            "url('./images/slider1.jpg')",
+            "url('./images/slider2.jpg')",
+            "url('./images/slider3.jpg')"
 
+        ]
+        check_canvas()
+        setInterval(autoSlide, 15000);
+        toggleNavbar();
+        new WOW().init();
+        win.on('scroll', function () {
+            counters();
+            if (win.width() > 1199) {
+                if (doc.scrollTop() > (win.height() / 2)) {
+                    $('.navbar').addClass('navbar_scroll')
+                } else {
+                    $('.navbar').removeClass('navbar_scroll')
+                }
+            }
+        });
+        var sectionIds = $('.main_navbar ul li a')
+        $(document).scroll(function () {
+            sectionIds.each(function () {
+                // name href
+                var container = $(this).attr('href');
+                //
+                var containerOffset = $(container).offset().top;
+                // console.log(container + containerOffset)
+                var containerHeight = $(container).outerHeight();
+                var containerBottom = containerOffset + containerHeight;
+                var scrollPosition = $(document).scrollTop();
+
+                if (scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+
+
+            });
+        });
+        $('.filter').click(function () {
+            data_filter = $(this).attr("data-filter")
+            $('.filter').removeClass('active')
+            $(this).addClass('active')
+            check_item(data_filter)
+        })
+
+        function check_item(data_filter) {
+            if (data_filter == "*") {
+                $('.item').fadeIn()
+            } else {
+                $('.item').each(function () {
+                    $(this).fadeOut(100)
+                    if ($(this).hasClass(data_filter)) {
+                        $(this).fadeIn(300)
+                    }
+                })
+            }
+            $('.crucio-purchase').hide()
+        }
+
+
+        win.on('resize', function () {
+            toggleNavbar();
+            check_canvas()
+        });
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
@@ -611,34 +689,19 @@
             dots: false,
             autoplay: true,
             autoplaySpeed: 1000
-            // responsive: {
-            //     0: {
-            //         items: 1
-            //     },
-            //     600: {
-            //         items: 3
-            //     },
-            //     1000: {
-            //         items: 5
-            //     }
-            // }
+
         })
-        main_menu = document.getElementById('main_menu')
 
         main_menu.addEventListener("click", function () {
-            if ($(".main_navbar").first().is(":hidden")) {
+            if ($('.main_navbar').first().is(":hidden")) {
                 $('.main_navbar').fadeIn("fast")
+
             } else {
                 $('.main_navbar').hide()
             }
         })
 
-        arr_img = [
-            "url('./images/slider1.jpg')",
-            "url('./images/slider2.jpg')",
-            "url('./images/slider3.jpg')"
-        ]
-        let slideIndex = 0;
+
 
         function autoSlide() {
             console.log(slideIndex)
@@ -650,26 +713,46 @@
             }
             $('#home').css('background-image', url_img).fadeIn('fast');
         }
-        setInterval(autoSlide, 15000);
-        random_move()
 
-        function random_move() {
-            $.magicCanvas.draw({
-                type: "random-move",
-                rgb: function (circlePos) {
-                    var px = circlePos.x;
-                    var py = circlePos.y;
-                    // do some computation....
-                    return {
-                        r: 173,
-                        g: 0,
-                        b: 255
-                    };
-                    //#ad00ff
-                    //R:173, G:0, B:255
+        function check_canvas() {
+            if (win.width() > 1199) {
+                $('#reactive-bg-canvas').css("display", "block");
+                if ($('#home').length > 0) {
+                    magicCanvas.draw({
+                        type: "random-move",
+                        zIndex: -2,
+                        rgb: function (circlePos) {
+                            var px = circlePos.x;
+                            var py = circlePos.y;
+
+                            return {
+                                r: parseInt(173),
+                                g: parseInt(0),
+                                b: 255
+                            };
+                        }
+                    });
+
                 }
-            })
-        };
+            } else {
+                $('#reactive-bg-canvas').css("display", "none");
+            }
+        }
+        var counters = function () {
+            $(".countTo").not('.animate__animated').each(function () {
+                if ($(window).scrollTop() >= $(this).offset().top - $(window).height() * 0.7) {
+                    $(this).addClass('animate__animated').countTo();
+                }
+            });
+        }
+
+        function toggleNavbar() {
+            if ((win.width() > 1199) && (doc.scrollTop() <= win.height())) {
+                $('.navbar').removeClass('navbar_scroll')
+            } else {
+                $('.navbar').addClass('navbar_scroll')
+            }
+        }
     </script>
 
 </body>

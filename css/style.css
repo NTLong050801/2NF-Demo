@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .text-center {
   text-align: center;
 }
@@ -12,6 +16,16 @@ h4 {
   letter-spacing: 3px;
   color: black;
   margin-top: 0;
+}
+
+.navbar_scroll {
+  background-color: rgba(10, 10, 10, 0.9) !important;
+  box-shadow: 0 3px 5px rgba(173, 0, 255, 0.3) !important;
+  height: 70px !important;
+}
+
+.active {
+  color: #ad00ff !important;
 }
 
 body {
@@ -91,7 +105,7 @@ body .navbar {
   padding: 0 50px;
   border-radius: 0;
   z-index: 99999;
-  background-color: black;
+  background-color: rgba(10, 10, 10, 0.9);
   box-shadow: 0 3px 5px rgba(173, 0, 255, 0.3);
   transition: all 0.5s ease-in-out;
   position: fixed;
@@ -108,6 +122,7 @@ body .navbar .navbar_container {
 }
 body .navbar .navbar_container .logo_home {
   text-align: left;
+  margin: auto 0;
 }
 body .navbar .navbar_container .logo_home img {
   max-height: 50px;
@@ -189,7 +204,7 @@ body .home {
   background-image: url("https://crucio.riccardoborchi.it/wp-content/uploads/2019/06/slider1.jpg");
   position: relative;
   height: 600px;
-  margin-top: 150px;
+  padding-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +212,7 @@ body .home {
   background-repeat: no-repeat;
 }
 body .home .row {
-  z-index: 2;
+  z-index: 10;
 }
 body .home .row h1 {
   width: 100%;
@@ -282,6 +297,7 @@ body .home .scroll-down {
   color: #ad00ff;
   font-weight: 400;
   transition: all 0.5s ease-in-out;
+  animation: fadeInDown 1s infinite alternate;
 }
 body .home .scroll-down::before {
   content: "";
@@ -296,8 +312,6 @@ body .home .scroll-down::before {
   width: 40px;
   height: 40px;
   transform: rotate(45deg);
-  -webkit-animation: scrollDown 1s infinite alternate;
-  animation: scrollDown 1s infinite alternate;
 }
 @media screen and (max-width: 767px) {
   body .home .scroll-down::before {
@@ -312,6 +326,9 @@ body .home .scroll-down::before {
     height: 20px;
     bottom: 10px;
   }
+}
+body .about {
+  background-color: #fff;
 }
 body .about .about_text {
   padding: 200px 50px;
@@ -449,7 +466,8 @@ body .about .about_main .about_main_cl .content_text p {
   }
 }
 body .services {
-  margin-top: 100px;
+  background-color: #fff;
+  padding-top: 100px;
 }
 body .services .about_text {
   padding: 100px 50px 100px 50px;
@@ -529,7 +547,6 @@ body .services .serv_banner .serv_banner_main h2 {
   visibility: visible;
   animation-duration: 1s;
   animation-delay: 0.5s;
-  animation-name: fadeInLeft;
 }
 body .services .serv_banner .serv_banner_main a {
   color: #FFF;
@@ -670,7 +687,8 @@ body .services .serv_banner .serv_banner_main a:hover {
   }
 }
 body .team {
-  margin-top: 100px;
+  background-color: #fff;
+  padding-top: 100px;
 }
 body .team .about_text {
   padding: 100px 50px 100px 50px;
@@ -942,7 +960,8 @@ body .team .serv_banner .serv_banner_main h3 {
   }
 }
 body .portf {
-  margin-top: 100px;
+  background-color: #fff;
+  padding-top: 100px;
 }
 body .portf .about_text {
   padding: 100px 50px 50px 50px;
@@ -1101,6 +1120,10 @@ body .portf .newsletter .content_news .ip_content form button {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   margin-top: 50px;
+}
+body .portf .newsletter .content_news .ip_content form button:hover {
+  color: #fff;
+  background-color: #ad00ff;
 }
 body .portf .serv_banner {
   background-color: #ad00ff;
@@ -1403,6 +1426,7 @@ body .blog .blog_logo .main_blog_logo .item_logo img:hover {
 body .contact {
   padding-top: 100px;
   padding-bottom: 200px;
+  background-color: #fff;
 }
 body .contact .about_text {
   padding: 100px 50px 50px 50px;
@@ -1592,7 +1616,7 @@ body .social {
   width: 100%;
   background-color: #111;
   padding: 50px 0;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 body .social .logo_social img {
   width: 200px;
